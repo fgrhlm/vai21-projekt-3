@@ -1,0 +1,102 @@
+/* Variables */
+:root {
+    --color-bg: #181818;
+    --color-bg-t: #181818;
+    --color-white: white;
+    --color-black: black;
+    --font-mono: 'Roboto Mono';
+    --font-sans: 'Archivo Black';
+    --border-style: 2px solid var(--color-white);
+}
+
+/* Reset */
+div, canvas { margin: 0; padding: 0; }
+html { 
+    width: 100%; 
+    height: 100%;     
+}
+
+html,body { 
+    margin: 0;
+    padding: 0;
+    color: var(--color-white);
+    font-family: var(--font-mono);
+}
+
+h1 { font-size: 6vw; margin: 0; padding: 0; font-family: "Archivo Black";}
+p { font-size: 9pt; }
+
+/* Flex Container*/
+.flex {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.justify-center { justify-content: center;}
+.align-start { align-items: flex-end !important;}
+.d-col { flex-direction: column; }
+.d-row { flex-direction: row; } 
+
+/* Utils */
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+.wh-100 { width: 100%; height: 100%; }
+.v-spacer { margin: 10px 0 15px 0; }
+.h-spacer { margin: 0px 10px 0px 15px; }
+
+.white { fill: var(--color-white); }
+.black { fill: var(--color-black) }
+
+svg {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.tool-tip {
+    margin-bottom: 10px;
+    width: 750px;
+    height: 20px;
+    position: fixed;
+    opacity: 0;
+    padding: 5px 20px 5px 20px;
+    font-size: 10px;
+}
+
+.about {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00ff88 !important;
+    mix-blend-mode: multiply;
+    height: 170px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 15px 15px 15px;
+    width: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-bg);
+}
+
+#content{
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#what {
+    font-size: 20px;
+    transition: 0.3s;
+    color: var(--color-bg);
+    width: 450px;
+    font-weight: bold;
+    position: fixed;
+    padding-left: 10px;
+    margin-top: 120px;
+    margin-left: 20px;
+}
